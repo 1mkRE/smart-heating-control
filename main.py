@@ -240,8 +240,8 @@ def WebConrole():
   global manual_mode
   global s
   
-  ssid = 'Hausnetz_2_Patro_Admin'
-  password = 'Matrix_1402'
+  ssid = ''
+  password = ''
   station = network.WLAN(network.STA_IF)
   station.active(True)
   station.connect(ssid, password)
