@@ -29,7 +29,7 @@ hum = 0.0
 frequency = 5000
 manual_mode = True
 automatic_mode = False
-api_key = 'd3oONdz8Eaw1SbJTn2_67b'
+api_key = ''
 
 try:
   i2c = I2C(scl=Pin(22), sda=Pin(21), freq=10000)
@@ -98,7 +98,7 @@ def web_page():
   <th>MEASUREMENT</th>
   <th>VALUE</th>
   </tr>
-  <tr><td><b>Temperatur</b></td><td><span class="sensor">""" + str(bme.temperature) + """ 閹虹煰</span></td></tr>
+  <tr><td><b>Temperatur</b></td><td><span class="sensor">""" + str(bme.temperature) + """ °C</span></td></tr>
   <tr><td><b>Barometric pressure</b></td><td><span class="sensor">""" + str(bme.pressure) + """ hPa</span></td></tr>
   <tr><td><b>Humidity</b></td><td><span class="sensor">""" + str(bme.humidity) + """ %</span></td></tr>
   <tr><td><b>Water level</b></td><td><span class="sensor">""" + str(waterlevel) + """ mm</span></td></tr>
